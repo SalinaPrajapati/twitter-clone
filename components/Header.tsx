@@ -15,7 +15,7 @@ const Header: React.FC<HeaderProps> = ({ label, showbackArrow }) => {
   }, [router]);
   
   return (
-    <div className="border-2 border-neutral-800 p-5">
+    <div className="border-2 border-neutral-800 p-3">
       <div className="flex flex-row items-center gap-2">
         { showbackArrow && (
           <BiArrowBack
@@ -25,7 +25,7 @@ const Header: React.FC<HeaderProps> = ({ label, showbackArrow }) => {
             className="cursor-pointer hover:opacity-70 transition"
           />
         )}
-        <h1 className="text-white text-xl font-semibold">{ label }</h1>
+        <h1 className="text-white text-xm font-semibold">{ label }</h1>
       </div>
     </div>
   );
