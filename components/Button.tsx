@@ -26,6 +26,7 @@ const Button: React.FC<ButtonProps> = ({
       disabled:cursor-not-allowed 
       rounded-full 
       font-semibold 
+      font-roboto
       hover:opacity-80 
       transition border-2 
       ${fullWidth ? "w-full" : "w-fit"}

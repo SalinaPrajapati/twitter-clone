@@ -48,6 +48,7 @@ const SidebarItem: React.FC<SidebarItemProps> = ({ label, icon: Icon, href, auth
         hover:bg-opacity-10 
         cursor-pointer 
         lg:hidden
+        font-roboto
       ">
         <Icon size={28} color="white" />
         {alert ? <BsDot className="text-sky-500 absolute -top-4 left-0" size={70} /> : null}
@@ -58,18 +59,19 @@ const SidebarItem: React.FC<SidebarItemProps> = ({ label, icon: Icon, href, auth
         lg:flex 
         items-row 
         gap-4 
-        p-4 
+        p-3 
         rounded-full 
         hover:bg-slate-300 
         hover:bg-opacity-10 
         cursor-pointer
         items-center
+        font-roboto
       ">
         <Icon size={24} color="white" />
-        <p className="hidden lg:block text-white text-xl">
+        <p className="hidden lg:block text-white text-xm font-roboto">
           {label}
         </p>
-        {alert ? <BsDot className="text-sky-500 absolute -top-4 left-0" size={70} /> : null}
+        {alert ? <BsDot className="text-sky-500 absolute -top-4 left-0" size={60} /> : null}
       </div>
     </div>
   );

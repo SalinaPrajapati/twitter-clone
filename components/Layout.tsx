@@ -11,6 +11,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           <Sidebar />
           <div 
             className="
+            font-roboto
               col-span-3 
               lg:col-span-2 
               border-x-[1px] 
